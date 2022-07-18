@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.cyan-btn {
+  @apply px-8 py-3 bg-cyan text-white font-semibold rounded-full border-b-[3px] border-[#2F9681] hover:bg-opacity-70;
+}
+
+.blue-btn {
+  @apply px-8 py-3 rounded-full text-white bg-light-blue font-semibold border-b-[3px] border-[#5A65BE] hover:bg-opacity-70;
+}
+
+.heading {
+  @apply font-semibold text-4xl text-dark-grayish-blue text-center mb-6;
+}
+
+.subheading {
+  @apply text-grayish-blue text-[1.1rem] 2xl:mx-96 2xl:px-6 text-center xl:w-[45%] leading-7;
+}
+
+.section__heading {
+  @apply text-dark-grayish-blue font-semibold text-[1.4rem] mb-2;
+}
+
+.section__subheading {
+  @apply text-grayish-blue mb-12 md:w-7/12 w-9/12 text-center md:text-left;
+}
+
+.footer__item {
+  @apply text-dark-grayish-blue hover:text-cyan md:text-left text-center;
+}
+
+.info__heading {
+  @apply text-dark-grayish-blue font-semibold text-xl mb-2;
+}
+
+.info__subheading {
+  @apply text-center text-grayish-blue md:mb-12 mb-16 w-10/12 leading-7;
+}
+
+.icon{
+  @apply text-dark-grayish-blue hover:text-cyan;
+}
