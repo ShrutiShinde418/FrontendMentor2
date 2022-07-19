@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.cards {
+  grid-template-areas: ". card-2 ." "card-1 card-2 card-3" "card-1 card-4 card-3" ". card-4 .";
+}
+
+.card {
+  @apply flex flex-col rounded-md border-t-4 bg-white justify-between p-9 shadow-xl;
+}
+
+.card__heading {
+  @apply text-dark-blue font-semibold text-2xl mb-2;
+}
+
+.card__subheading {
+  @apply text-grayish-blue md:text-md text-base mb-14 leading-7;
+}
+
+.border-cyan {
+  grid-area: card-1;
+}
+
+.border-red {
+  grid-area: card-2;
+}
+
+.border-blue {
+  grid-area: card-3;
+}
+
+.border-orange {
+  grid-area: card-4;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .cards {
+    grid-template-areas: "card-1 card-2" "card-3 card-4";
+  }
+}
+
+@media (max-width: 768px) {
+  .cards {
+    grid-template-areas: "card-1" "card-2" "card-4" "card-3";
+  }
+}
